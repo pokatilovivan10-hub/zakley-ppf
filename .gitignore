@@ -1,0 +1,5 @@
+*.zip
+original_images/
+hero_bg_original.jpg
+app/node_modules/
+app/dist/

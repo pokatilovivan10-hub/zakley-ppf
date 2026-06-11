@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 7% 11%;
+    --foreground: 0 0% 100%;
+    --card: 210 7% 16%;
+    --card-foreground: 0 0% 100%;
+    --popover: 210 7% 16%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 62 98% 52%;
+    --primary-foreground: 200 7% 11%;
+    --secondary: 210 7% 16%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 7% 16%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 62 98% 52%;
+    --accent-foreground: 200 7% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 5% 24%;
+    --input: 210 5% 24%;
+    --ring: 62 98% 52%;
+    --radius: 0.75rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Hero animations */
+@keyframes floatParticle {
+  0%, 100% { transform: translateY(0) translateX(0); opacity: 0.5; }
+  25% { transform: translateY(-30px) translateX(15px); opacity: 0.9; }
+  50% { transform: translateY(-55px) translateX(-15px); opacity: 0.5; }
+  75% { transform: translateY(-30px) translateX(10px); opacity: 0.8; }
+}
+
+@keyframes giftBounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  15% { transform: translateY(-4px) rotate(-8deg); }
+  30% { transform: translateY(2px) rotate(4deg); }
+  45% { transform: translateY(-2px) rotate(-3deg); }
+  60% { transform: translateY(1px) rotate(2deg); }
+  75% { transform: translateY(0) rotate(0deg); }
+}
+
+@keyframes promoGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(250,254,12,0.25), 0 0 60px rgba(250,254,12,0.08); }
+  50% { box-shadow: 0 0 40px rgba(250,254,12,0.5), 0 0 80px rgba(250,254,12,0.15); }
+}
+
+.animate-gift-bounce {
+  animation: giftBounce 3s ease-in-out infinite;
+}
+
+.animate-promo-glow {
+  animation: promoGlow 2.5s ease-in-out infinite;
+}
