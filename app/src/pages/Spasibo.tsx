@@ -5,7 +5,7 @@ export default function Spasibo() {
   useEffect(() => {
     // Цель Метрики — достижение страницы "Спасибо"
     if (typeof window.ym === 'function') {
-      window.ym(109609489, 'reachGoal', 'spasibo_page_view');
+      window.ym(111319071, 'reachGoal', 'spasibo_page_view');
     }
   }, []);
 
