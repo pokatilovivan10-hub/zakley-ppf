@@ -87,7 +87,7 @@ export default function ContactForm() {
 
     // 3. Яндекс.Метрика
     if (typeof window.ym === 'function') {
-      window.ym(111319071, 'reachGoal', 'form_successful_submission');
+      window.ym(109609489, 'reachGoal', 'form_successful_submission');
       console.log('Цель Метрики отправлена: form_successful_submission');
     }
 
